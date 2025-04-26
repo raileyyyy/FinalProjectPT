@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Claws - Premium Pet Supplies</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="main.js"></script>
+    
+
+</head>
+<body>
+
+    <!-- Navigation Bar Section -->
+    <nav class="navbar">
+        <!-- Brand & Logo -->
+        <div class="brand">
+            <img src="../../assets/logo.png" alt="Paws & Claws Logo" class="logo">
+            <a href="/" class="brand-name">Paws & Claws</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="../frontend/home/main.html">Home</a>
+            <a href="../frontend/about/">About Us</a>
+            <a href="../frontend/services/">Services</a>
+            <a href="../frontend/shop/">Shop</a>
+            <a href="../frontend/contact/">Contact</a>
+        </div>
+
+        <!-- Right Side Icons -->
+        <div class="nav-icons">
+            <button class="icon-button cart-button" aria-label="Shopping Cart">
+                <i class="fas fa-shopping-cart icon"></i>
+                <span class="cart-count">0</span>
+            </button>
+            
+            <a href="/login" class="icon-button">
+                <i class="fas fa-user icon"></i>
+                <span>Sign In</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="landing-page">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h1>Your Pets Deserve the Best</h1>
+                <p>Premium supplies for cats and dogs</p>
+                <a href="/shop" class="cta-button">Shop All</a>
+            </div>
+            <img src="../../assets/banner.jpg" alt="Cat and dog together" class="hero-img">
+        </section>
+
+        <!-- Pet Type Selector -->
+        <section class="pet-selector">
+            <h2>Shop by Pet</h2>
+            <div class="pet-options">
+                <a href="/shop/dogs" class="pet-card dog-card">
+                    <img src="../../assets/dog-paw.png" alt="Dog paw">
+                    <h3>Dogs</h3>
+                    <p>Food, Toys, Accessories</p>
+                </a>
+                
+                <a href="/shop/cats" class="pet-card cat-card">
+                    <img src="../../assets/cat-paw.webp" alt="Cat paw">
+                    <h3>Cats</h3>
+                    <p>Food, Toys, Litter</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals">
+            <div class="section-header">
+                <h2>New Arrivals</h2>
+                <a href="/shop/new" class="view-all">View All →</a>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../../assets/logo.png" alt="Premium Dog Food" class="product-image">
+                    <h3>Premium Dog Food</h3>
+                    <p>$24.99</p>
+                    <a href="/product/1" class="quick-view">Quick View</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="../../assets/logo.png" alt="Cat Tree House" class="product-image">
+                    <h3>Cat Tree House</h3>
+                    <p>$59.99</p>
+                    <a href="/product/2" class="quick-view">Quick View</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="../../assets/logo.png" alt="Interactive Toy Set" class="product-image">
+                    <h3>Interactive Toy Set</h3>
+                    <p>$19.99</p>
+                    <a href="/product/3" class="quick-view">Quick View</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Categories Section -->
+        <section class="shop-categories">
+            <h2>Shop by Category</h2>
+            <p class="section-subtitle">Everything your pet needs in one place</p>
+            
+            <div class="categories-grid">
+                <a href="/shop/food" class="category-card">
+                    <div class="image-frame">
+                        <img src="../../assets/pet-food.webp" alt="Pet Food">
+                    </div>
+                    <h3>Pet Food</h3>
+                    <p>Premium nutrition for all life stages</p>
+                </a>
+
+                <a href="/shop/toys" class="category-card">
+                    <div class="image-frame">
+                        <img src="../../assets/pet-toy.webp" alt="Pet Toys">
+                    </div>
+                    <h3>Toys</h3>
+                    <p>Fun and engaging playtime</p>
+                </a>
+
+                <a href="/shop/accessories" class="category-card">
+                    <div class="image-frame">
+                        <img src="../../assets/pet-accessories.jpg" alt="Pet Accessories">
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Collars, leashes, and more</p>
+                </a>
+
+                <a href="/shop/health" class="category-card">
+                    <div class="image-frame">
+                        <img src="../../assets/pet-health.webp" alt="Pet Health Products">
+                    </div>
+                    <h3>Health Products</h3>
+                    <p>Supplements and care essentials</p>
+                </a>
+
+                <a href="/shop/services" class="category-card">
+                    <div class="image-frame">
+                        <img src="../../assets/pet-services.jpg" alt="Pet Services">
+                    </div>
+                    <h3>Services</h3>
+                    <p>Grooming, vet care & boarding</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+              <div class="newsletter-content">
+                <h2>Join Our Pack!</h2>
+                <p>Subscribe for pet care tips and exclusive offers</p>
+              </div>
+              <form class="newsletter-form">
+                <input 
+                  type="email" 
+                  placeholder="Your email address" 
+                  required 
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </section>
+
+        <!-- Footer -->
+            <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-column">
+                <div class="footer-brand">
+                    <img src="../../assets/logo.png" alt="Paws & Claws" class="footer-logo">
+                    <h3>Paws & Claws</h3>
+                </div>
+                <p>Premium pet supplies and services for your furry family members.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../home/main.html">Home</a></li>
+                    <li><a href="../shop/">Shop</a></li>
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../about/">About Us</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> TIP BASURA</li>
+                    <li><i class="fas fa-phone"></i> (+63) 969 696 6969</li>
+                    <li><i class="fas fa-envelope"></i> info@pawsandclaws.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; <span id="current-year"></span> Paws & Claws. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
