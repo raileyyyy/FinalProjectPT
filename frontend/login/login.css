@@ -37,13 +37,24 @@ nav.navbar {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1000; 
+  z-index: 1050; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the dropdown menu is above everything */
+.navbar .dropdown-menu {
+  position: absolute; /* Ensure it overlaps other elements */
+  z-index: 1100; /* Higher than the navbar and login container */
+  top: 100%; /* Position it below the dropdown toggle */
+  left: 0; /* Align it with the dropdown toggle */
+  transform: translateY(0); /* Prevent Bootstrap's default offset */
+  background-color: #fff; /* Ensure visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
 
 .brand {
