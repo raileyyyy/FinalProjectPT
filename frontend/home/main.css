@@ -18,7 +18,7 @@
   }
 
 /* Navbar Styles */
-.navbar {
+nav.navbar {
   position: sticky;
   top: 0;
   z-index: 1000; 
@@ -57,6 +57,7 @@
   color: #555;
   text-decoration: none;
   position: relative;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -78,6 +79,11 @@
 .nav-links a:focus::after,
 .nav-links a:active::after {
     width: 100%; /* Full width underline on hover, focus, or active */
+}
+
+/* Remove underline for the Shop dropdown menu */
+#shopDropdown.nav-link.dropdown-toggle::after {
+  content: none;
 }
 
 /* Dropdown Styles */
@@ -108,6 +114,7 @@
   transform: rotate(180deg);
 }
 
+/* Dropdown Styles */
 .dropdown-menu {
   display: none; /* Hidden by default */
   position: absolute;
@@ -118,6 +125,15 @@
   border-radius: 5px;
   padding: 10px 0;
   z-index: 1000;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .dropdown-menu a {
@@ -132,11 +148,6 @@
 .dropdown-menu a:hover {
   background-color: #f8f9fa;
   color: #007bff;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
 }
 
 .sign-in-btn {
