@@ -71,14 +71,57 @@
 
     <div class="landing-page">
         <!-- Hero Banner -->
-        <section class="hero-banner">
-            <div class="hero-text">
-                <h1>Your Pets Deserve the Best</h1>
-                <p>Premium supplies for cats and dogs</p>
-                <a href="/shop" class="cta-button">Shop All</a>
+<section class="hero-banner">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#heroCarousel" data-slide-to="1"></li>
+            <li data-target="#heroCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="../../assets/slide1.jpg" class="d-block w-100" alt="Cat and dog together">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Your Pets Deserve the Best</h1>
+                    <p>Premium supplies for cats and dogs</p>
+                    <a href="/shop" class="btn btn-primary">Shop All</a>
+                </div>
             </div>
-            <img src="../../assets/banner.jpg" alt="Cat and dog together" class="hero-img">
-        </section>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="../../assets/slide2.jpg" class="d-block w-100" alt="Pet toys">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Playtime Made Better</h1>
+                    <p>Explore our range of fun and engaging toys</p>
+                    <a href="/shop/toys" class="btn btn-primary">Shop Toys</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="../../assets/slide3.jpg" class="d-block w-100" alt="Pet food">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Nutrition for Every Life Stage</h1>
+                    <p>Discover premium food for your pets</p>
+                    <a href="/shop/food" class="btn btn-primary">Shop Food</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
 
         <!-- Pet Type Selector -->
         <section class="pet-selector">
@@ -107,21 +150,21 @@
             
             <div class="product-grid">
                 <div class="product-card">
-                    <img src="../../assets/logo.png" alt="Premium Dog Food" class="product-image">
+                    <img src="../../assets/dog-food.webp" alt="Premium Dog Food" class="product-image">
                     <h3>Premium Dog Food</h3>
                     <p>$24.99</p>
                     <a href="/product/1" class="quick-view">Quick View</a>
                 </div>
                 
                 <div class="product-card">
-                    <img src="../../assets/logo.png" alt="Cat Tree House" class="product-image">
+                    <img src="../../assets/tree-house.jpg" alt="Cat Tree House" class="product-image">
                     <h3>Cat Tree House</h3>
                     <p>$59.99</p>
                     <a href="/product/2" class="quick-view">Quick View</a>
                 </div>
                 
                 <div class="product-card">
-                    <img src="../../assets/logo.png" alt="Interactive Toy Set" class="product-image">
+                    <img src="../../assets/toy-set.webp" alt="Interactive Toy Set" class="product-image">
                     <h3>Interactive Toy Set</h3>
                     <p>$19.99</p>
                     <a href="/product/3" class="quick-view">Quick View</a>
