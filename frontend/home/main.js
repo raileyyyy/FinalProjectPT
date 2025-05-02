@@ -6,4 +6,8 @@
         });
 
 // Dynamic year for copyright
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+
+
+

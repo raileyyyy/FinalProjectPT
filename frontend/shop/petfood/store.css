@@ -26,6 +26,8 @@ nav.navbar {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
+  width: 100%;
+  left: 0;
 }
 
 .brand {
@@ -163,6 +165,10 @@ display: none;
   margin-top: 20px !important;
   margin-left: 20px !important;
   padding: 0 !important;
+  position: relative;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 
@@ -174,10 +180,11 @@ display: none;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   position: sticky;
-  top: 20px;
-  height: fit-content;
-  max-height: calc(100vh - 100px);
-  overflow-y: auto;
+  top: 20px; /* Space from top of viewport */
+  align-self: flex-start; /* Important for flex layout */
+  max-height: calc(100vh - 40px); /* Viewport height minus some space */
+  overflow-y: auto; /* Enable scrolling if content is long */
+  z-index: 50;
 }
 
 .sidebar h2 {
