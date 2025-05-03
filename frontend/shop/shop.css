@@ -527,8 +527,6 @@ display: none;
   opacity: 1;
 }
 
-
-
 .filter-section {
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -614,7 +612,216 @@ display: none;
   background-color: #f0f0f0;
 }
 
+/* General Sidebar Styling */
+.sidebar {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 250px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
 
+.filter-section {
+  margin-bottom: 24px;
+}
 
+.filter-header h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
+/* Dual Range Sliders */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #d3d3d3;
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 0;
+  pointer-events: none; /* Prevent direct overlap conflict */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #7f6fff;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto; /* Re-enable interaction for thumb */
+  position: relative;
+  z-index: 2;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #7f6fff;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+}
+
+#priceDisplay {
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px;
+  color: #333;
+}
+
+/* Style for the Rating Filter Section */
+.filter-section.rating label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 6px 0;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.filter-section.rating label:hover {
+  color: #7f6fff;
+  transform: scale(1.02);
+}
+
+.filter-section.rating input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+  transform: scale(1.1);
+  accent-color: #7f6fff;
+}
+
+.filter-section.rating {
+  padding-top: 10px;
+}
+
+/*cat & dog*/
+
+.title-shop h2{
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  font-size: 35px;
+}
+
+.pet-selection-section {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.pet-selection-section h2 {
+margin-bottom: 30px;
+font-size: 28px;
+}
+
+.pet-options {
+display: flex;
+justify-content: center;
+gap: 40px;
+margin-top: 20px;
+text-align: center;
+}
+
+.pet-option {
+width: 150px;
+cursor: pointer;
+}
+  
+.pet-image {
+width: 120px;
+height: 120px;
+background: #f0f0f0;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+margin: 0 auto 15px;
+}
+
+.pet-option h3 {
+font-size: 20px;
+color: #333;
+}
+.catdog {
+width: 100%px;
+height: 250px;
+border: 1px solid #ffffff;
+border-radius: 10px;
+padding-left: 10%;
+padding-right: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.catdog-container {
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 100%;
+gap: 40px;
+}
+.catdog-container h3 {
+text-align: center;
+font-size: 20px;
+color: #333;
+margin-top: 10px;
+}
+
+.pet-rectangle {
+width: 710px;
+height: 84%;
+border-radius: 10px;
+background: #fbe992;
+position: relative;
+display: flex;
+justify-content: center;
+transition: transform 0.3s ease;
+}
+.pet-rectangle-2{
+width: 710px;
+height: 84%;
+border-radius: 10px;
+background: #a9d9e2;
+position: relative;
+display: flex;
+justify-content: center;
+transition: transform 0.3s ease;
+}
+.pet-rectangle:hover {
+transform: scale(1.03); 
+}
+
+.pet-rectangle-2:hover {
+transform: scale(1.03);
+}
+
+.pet-rectangle, .pet-rectangle-2 {
+cursor: pointer;
+}
+    
+.pet-img1 {
+width: 500px;
+height: 320px;
+position: absolute;
+top: -77px; 
+object-fit: contain;
+}
+
+.pet-img2 {
+width: 350px;
+height: 290px;
+position: absolute;
+top: -82px;
+object-fit: contain;
+}
 

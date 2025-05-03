@@ -2,8 +2,8 @@ const products = [
     { 
         id: 1,
         name: 'Luxury Leather Collar', 
-        price: 29.99, 
-        rating: 4.5, 
+        price: 159.99, 
+        rating: 4.7, 
         image: '../../assets/leather_collar.jpg',
         description: 'Premium leather collar with adjustable fit and stylish design. Perfect for both comfort and fashion.',
         features: [
@@ -16,7 +16,7 @@ const products = [
     { 
         id: 2,
         name: 'Cozy Pet Bed', 
-        price: 59.99, 
+        price: 209.99, 
         rating: 4.8, 
         image: '../../assets/petBed.jpg',
         description: 'Ultra-soft pet bed with orthopedic support for your furry friend\'s comfort.',
@@ -31,7 +31,7 @@ const products = [
     { 
         id: 3,
         name: 'Squeaky Plush Toy', 
-        price: 14.99, 
+        price: 99.99, 
         rating: 4.3, 
         image: '../../assets/plushToy.jpg',
         description: 'Fun and cuddly squeaky toy that keeps your pet entertained for hours.',
@@ -45,9 +45,9 @@ const products = [
     { 
         id: 4,
         name: 'Stainless Steel Food Bowl', 
-        price: 19.99, 
+        price: 199.99, 
         rating: 4.6, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/foodbowl.jpg',
         description: 'Durable and hygienic stainless steel bowl for food or water.',
         features: [
             'Non-slip rubber base',
@@ -59,9 +59,9 @@ const products = [
     { 
         id: 5,
         name: 'Pet Grooming Brush Set', 
-        price: 24.99, 
+        price: 99.99, 
         rating: 4.7, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/brushSet.jpg',
         description: 'Keep your pet’s coat shiny and healthy with this complete grooming set.',
         features: [
             'Includes detangler, slicker, and shedding brush',
@@ -73,9 +73,9 @@ const products = [
     { 
         id: 6,
         name: 'Waterproof Dog Raincoat', 
-        price: 34.99, 
+        price: 79.99, 
         rating: 4.4, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/rainCoat.jpg',
         description: 'Stylish waterproof raincoat to keep your dog dry during rainy walks.',
         features: [
             'Adjustable straps',
@@ -87,9 +87,9 @@ const products = [
     { 
         id: 7,
         name: 'Interactive Laser Toy', 
-        price: 22.50, 
+        price: 69.50, 
         rating: 4.2, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/laserToy.jpg',
         description: 'Automatic laser pointer for endless interactive fun with your cat or small dog.',
         features: [
             'Hands-free operation',
@@ -101,9 +101,9 @@ const products = [
     { 
         id: 8,
         name: 'Pet Travel Carrier', 
-        price: 49.95, 
+        price: 799.95, 
         rating: 4.5, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/petCarrier.jpg',
         description: 'Comfortable and airline-approved travel carrier for small pets.',
         features: [
             'Padded shoulder strap',
@@ -115,9 +115,9 @@ const products = [
     { 
         id: 9,
         name: 'Chew-Resistant Leash', 
-        price: 18.75, 
+        price: 149.75, 
         rating: 4.3, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/leash.jpg',
         description: 'Heavy-duty leash designed to withstand pulling and chewing.',
         features: [
             'Nylon-coated steel cable',
@@ -129,9 +129,9 @@ const products = [
     { 
         id: 10,
         name: 'Organic Dog Treats', 
-        price: 12.99, 
+        price: 74.99, 
         rating: 4.9, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/dogTreat.jpg',
         description: 'All-natural, grain-free treats made with real chicken and veggies.',
         features: [
             'No artificial additives',
@@ -170,7 +170,7 @@ function renderProducts() {
                 </div>
                 ${generateStarRating(product.rating)}
                 <h4 class="product-title">${product.name}</h4>
-                <p class="product-price">$${product.price.toFixed(2)}</p>
+                <p class="product-price">P${product.price.toFixed(2)}</p>
             </div>
         `;
         
@@ -190,3 +190,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+    const minRange = document.getElementById("priceRangeMin");
+    const maxRange = document.getElementById("priceRangeMax");
+    const priceDisplay = document.querySelector(".filter-section p");
+
+    function updatePriceDisplay() {
+        let min = parseInt(minRange.value);
+        let max = parseInt(maxRange.value);
+        if (min > max) [min, max] = [max, min];
+        priceDisplay.textContent = `₱${min} - ₱${max}`;
+    }
+
+    minRange.addEventListener("input", updatePriceDisplay);
+    maxRange.addEventListener("input", updatePriceDisplay);
+    updatePriceDisplay();

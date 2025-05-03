@@ -125,7 +125,7 @@ const products = [
         name: 'Stainless Steel Food Bowl', 
         price: 19.99, 
         rating: 4.6, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/foodbowl.jpg',
         description: 'Durable and hygienic stainless steel bowl for food or water.',
         features: [
             'Non-slip rubber base',
@@ -139,7 +139,7 @@ const products = [
         name: 'Pet Grooming Brush Set', 
         price: 24.99, 
         rating: 4.7, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/brushSet.jpg',
         description: 'Keep your pet’s coat shiny and healthy with this complete grooming set.',
         features: [
             'Includes detangler, slicker, and shedding brush',
@@ -153,7 +153,7 @@ const products = [
         name: 'Waterproof Dog Raincoat', 
         price: 34.99, 
         rating: 4.4, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/rainCoat.jpg',
         description: 'Stylish waterproof raincoat to keep your dog dry during rainy walks.',
         features: [
             'Adjustable straps',
@@ -167,7 +167,7 @@ const products = [
         name: 'Interactive Laser Toy', 
         price: 22.50, 
         rating: 4.2, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/laserToy.jpg',
         description: 'Automatic laser pointer for endless interactive fun with your cat or small dog.',
         features: [
             'Hands-free operation',
@@ -181,7 +181,7 @@ const products = [
         name: 'Pet Travel Carrier', 
         price: 49.95, 
         rating: 4.5, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/petCarrier.jpg',
         description: 'Comfortable and airline-approved travel carrier for small pets.',
         features: [
             'Padded shoulder strap',
@@ -195,7 +195,7 @@ const products = [
         name: 'Chew-Resistant Leash', 
         price: 18.75, 
         rating: 4.3, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/leash.jpg',
         description: 'Heavy-duty leash designed to withstand pulling and chewing.',
         features: [
             'Nylon-coated steel cable',
@@ -209,7 +209,7 @@ const products = [
         name: 'Organic Dog Treats', 
         price: 12.99, 
         rating: 4.9, 
-        image: 'https://via.placeholder.com/800',
+        image: '../../assets/dogTreat.jpg',
         description: 'All-natural, grain-free treats made with real chicken and veggies.',
         features: [
             'No artificial additives',
