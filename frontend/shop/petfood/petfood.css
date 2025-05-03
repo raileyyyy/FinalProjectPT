@@ -379,7 +379,7 @@ display: none;
 }
 
 .submenu a {
-  color: #555; /* Color for submenu links */
+  color: #555;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.5s ease;
@@ -388,6 +388,16 @@ display: none;
 .submenu a:hover {
   color: #007bff;
 }
+
+.menu, .submenu {
+  list-style-type: none !important;
+}
+
+.menu {
+  padding-left: 0 !important;
+}
+
+
 
 
 

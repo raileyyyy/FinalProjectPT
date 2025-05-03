@@ -219,42 +219,6 @@ display: none;
 }
 }
 
-.sidebar {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  font-size: 14px;
-  height: fit-content;
-}
-
-.sidebar h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.sidebar h3:first-child {
-  margin-top: 0;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.sidebar ul li {
-  padding: 0.5rem 0;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.sidebar ul li:hover {
-  color: #3653f8;
-}
-
 .rating-filter .form-check {
   margin-bottom: 0.5rem;
 }
@@ -418,18 +382,28 @@ display: none;
 }
 
 
+
+
+
+
+
+
+
+
+
 .sidebar {
-  width: 250px;
+  width: 250px !important;
   padding: 25px 20px;
   margin-left: 30px;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   position: sticky;
-  top: 20px;
-  height: fit-content;
-  max-height: calc(100vh - 100px);
-  overflow-y: auto;
+  top: 20px; /* Space from top of viewport */
+  align-self: flex-start;
+  max-height: calc(100vh - 80px); /* Viewport height minus some space */
+  overflow-y: auto; /* Enable scrolling if content is long */
+  z-index: 50;
 }
 
 .sidebar h2 {
@@ -504,7 +478,6 @@ display: none;
 .menu a:hover {
   background-color: #f5f9ff;
   color: #007BFF;
-  text-decoration: none;
 }
 
 .menu li.active a {
@@ -528,6 +501,38 @@ display: none;
 }
 
 
+.submenu {
+  display: none; /* Hide submenu by default */
+  padding-left: 15px; /* Indent submenu items */
+}
+
+.menu li:hover .submenu {
+  display: block; /* Show submenu on hover of parent item */
+}
+
+/* Additional styling for submenu items */
+.submenu li {
+  margin-bottom: 5px; /* Spacing between subitems */
+}
+
+.submenu a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.5s ease;
+}
+
+.submenu a:hover {
+  color: #007bff;
+}
+
+.menu, .submenu {
+  list-style-type: none !important;
+}
+
+.menu {
+  padding-left: 0 !important;
+}
 
 .filter-section {
   overflow: hidden;
