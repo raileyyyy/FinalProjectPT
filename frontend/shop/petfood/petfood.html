@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paws & Claws</title>
-  <link rel="stylesheet" href="store.css">
+  <link rel="stylesheet" href="petfood.css">
   <link rel="stylesheet" href="../../home/main.js">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
@@ -76,56 +76,55 @@
     <aside class="sidebar">
       <h2>Filters</h2>
       <div class="filter-section">
-          <div class="filter-header">
-              <h3>Categories</h3>
-          </div>
-          <ul class="menu">
-              <li><a href="../../shop/shop.html">All Products</a></li>
-              <li class="active"><a href="pet-food.html">Pet Food</a></li>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Toys</a></li>
-              <li><a href="">Health Products</a></li>
-              <li><a href="services.html">Services</a></li>
-          </ul>
+        <div class="filter-header">
+          <h3>Categories</h3>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="../../shop/shop.html" class="has-submenu">All Products</a>
+            <ul class="submenu">
+              <li><a href="">Cat</a></li>
+              <li><a href="">Dog</a></li>
+            </ul>
+          </li> 
+        
+          <li class="active"> <!-- add ka active if nasa petfood link ka or other-->
+            <a href="pet-food.html" class="has-submenu">Pet Foods</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Cat</a>
+                <ul class="submenu">
+                  <li><a href="#">Wet Foods</a></li>
+                  <li><a href="#">Dry Foods</a></li>
+                  <li><a href="#">Snacks</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Dog</a>
+                <ul class="submenu">
+                  <li><a href="#">Wet Foods</a></li>
+                  <li><a href="#">Dry Foods</a></li>
+                  <li><a href="#">Snacks</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <!-- Remove active in other if youre not in their links-->
+          <li><a href="../../shop/accessories.html">Accessories</a></li>
+          <li><a href="../../shop/health.html">Health Products</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+        
+        
       </div>
     </aside>
+    
 
     <main class="main-content">
-      <h2>Shop for your Pet</h2>
-      <section class="catdog">
-        <div class="catdog-container">
-          <div>
-            <a href="cat food.html" class="pet-link">
-            <div class="pet-rectangle">
-              <img src="../../../assets/petfood/cat.png" class="pet-img1">
-            </div>
-            </a>
-            <h3>Cat</h3>
-            
-          </div>
-          <div>
-            <a href="dog food.html" class="pet-link">
-            <div class="pet-rectangle-2">
-              <img src="../../../assets/petfood/dog.png" class="pet-img2">
-            </div>
-            </a>
-            <h3>Dog</h3>
-          </div>
-          
-        </div>
-      </section>
-
-
-
-
-
-
-
-
-      
       <!-- swiper jquery -->
       <section class="products-section">
-        <h2>Top Rated Pet Food</h2>
+        <h2>Best Seller</h2>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -1116,6 +1115,22 @@
           }
         }
       });
+    });
+
+
+
+
+
+    const currentPath = window.location.pathname; // condition for side bar active
+    const menuItems = document.querySelectorAll('.menu li');
+
+    menuItems.forEach(item => {
+      const link = item.querySelector('a');
+      if (link && link.getAttribute('href') === currentPath) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
     });
   </script>
 
