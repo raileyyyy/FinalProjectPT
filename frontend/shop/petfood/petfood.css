@@ -440,6 +440,40 @@ display: none;
 
 
 
+/*section-title css */
+.section-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-all-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #939ba3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.see-all-link i {
+  margin-left: 5px;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.see-all-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.see-all-link:hover i {
+  transform: translateX(3px);
+}
+
+
+
+
 /*swiper jquery*/
 .swiper-container {
   width: 100%;
@@ -512,11 +546,11 @@ display: none;
 
 .products-section h2, .products-section2 h2 {
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 14px;
     color: #333;
     font-weight: 600;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 .products-section h2::after {
