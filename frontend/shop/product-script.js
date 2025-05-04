@@ -217,5 +217,145 @@ const products = [
             'Ideal for training',
             'Resealable pouch'
         ]
-    }
+    },
+    { 
+        id: 11,
+        name: 'Whiskas cat food', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/whiskas.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 12,
+        name: 'Royal canin puppy dog food', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/royalCanin.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 13,
+        name: 'Cat scratcher', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/scratcher.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 14,
+        name: 'Rope chewy rope toys', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/dog Toy.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 15,
+        name: 'Vita pet ', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/vita pet.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 16,
+        name: 'Pet shampoo & conditioner', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/pet shampoo.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 17,
+        name: 'Detachable pet carrier', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/pet carrier.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 18,
+        name: 'Pet grooming set', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/grooming set.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 19,
+        name: 'Puppyluv pet snacks', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/pet snack.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 20,
+        name: 'Automatic foam dispenser', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/foam dispenser.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
 ];

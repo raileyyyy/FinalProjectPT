@@ -2,8 +2,8 @@ const products = [
     { 
         id: 1,
         name: 'Luxury Leather Collar', 
-        price: 159.99, 
-        rating: 4.7, 
+        price: 29.99, 
+        rating: 4.5, 
         image: '../../assets/leather_collar.jpg',
         description: 'Premium leather collar with adjustable fit and stylish design. Perfect for both comfort and fashion.',
         features: [
@@ -16,7 +16,7 @@ const products = [
     { 
         id: 2,
         name: 'Cozy Pet Bed', 
-        price: 209.99, 
+        price: 59.99, 
         rating: 4.8, 
         image: '../../assets/petBed.jpg',
         description: 'Ultra-soft pet bed with orthopedic support for your furry friend\'s comfort.',
@@ -25,13 +25,13 @@ const products = [
             'Removable, machine-washable cover',
             'Water-resistant lining',
             'Non-slip bottom',
-            'Availabe in 6 colors'
+            'Available in 6 colors'
         ]
     },
     { 
         id: 3,
         name: 'Squeaky Plush Toy', 
-        price: 99.99, 
+        price: 14.99, 
         rating: 4.3, 
         image: '../../assets/plushToy.jpg',
         description: 'Fun and cuddly squeaky toy that keeps your pet entertained for hours.',
@@ -45,7 +45,7 @@ const products = [
     { 
         id: 4,
         name: 'Stainless Steel Food Bowl', 
-        price: 199.99, 
+        price: 19.99, 
         rating: 4.6, 
         image: '../../assets/foodbowl.jpg',
         description: 'Durable and hygienic stainless steel bowl for food or water.',
@@ -59,7 +59,7 @@ const products = [
     { 
         id: 5,
         name: 'Pet Grooming Brush Set', 
-        price: 99.99, 
+        price: 24.99, 
         rating: 4.7, 
         image: '../../assets/brushSet.jpg',
         description: 'Keep your pet’s coat shiny and healthy with this complete grooming set.',
@@ -73,7 +73,7 @@ const products = [
     { 
         id: 6,
         name: 'Waterproof Dog Raincoat', 
-        price: 79.99, 
+        price: 34.99, 
         rating: 4.4, 
         image: '../../assets/rainCoat.jpg',
         description: 'Stylish waterproof raincoat to keep your dog dry during rainy walks.',
@@ -87,7 +87,7 @@ const products = [
     { 
         id: 7,
         name: 'Interactive Laser Toy', 
-        price: 69.50, 
+        price: 22.50, 
         rating: 4.2, 
         image: '../../assets/laserToy.jpg',
         description: 'Automatic laser pointer for endless interactive fun with your cat or small dog.',
@@ -101,7 +101,7 @@ const products = [
     { 
         id: 8,
         name: 'Pet Travel Carrier', 
-        price: 799.95, 
+        price: 49.95, 
         rating: 4.5, 
         image: '../../assets/petCarrier.jpg',
         description: 'Comfortable and airline-approved travel carrier for small pets.',
@@ -115,7 +115,7 @@ const products = [
     { 
         id: 9,
         name: 'Chew-Resistant Leash', 
-        price: 149.75, 
+        price: 18.75, 
         rating: 4.3, 
         image: '../../assets/leash.jpg',
         description: 'Heavy-duty leash designed to withstand pulling and chewing.',
@@ -129,7 +129,7 @@ const products = [
     { 
         id: 10,
         name: 'Organic Dog Treats', 
-        price: 74.99, 
+        price: 12.99, 
         rating: 4.9, 
         image: '../../assets/dogTreat.jpg',
         description: 'All-natural, grain-free treats made with real chicken and veggies.',
@@ -139,7 +139,147 @@ const products = [
             'Ideal for training',
             'Resealable pouch'
         ]
-    }
+    },
+    { 
+        id: 11,
+        name: 'Whiskas cat food', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/whiskas.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 12,
+        name: 'Royal canin puppy dog food', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/royalCanin.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 13,
+        name: 'Cat scratcher', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/scratcher.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 14,
+        name: 'Rope chewy rope toys', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/dog Toy.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 15,
+        name: 'Vita pet ', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/vita pet.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 16,
+        name: 'Pet shampoo & conditioner', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/pet shampoo.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 17,
+        name: 'Detachable pet carrier', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/pet carrier.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 18,
+        name: 'Pet grooming set', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/grooming set.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 19,
+        name: 'Puppyluv pet snacks', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/pet snack.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
+    { 
+        id: 20,
+        name: 'Automatic foam dispenser', 
+        price: 12.99, 
+        rating: 4.9, 
+        image: '../../assets/allProduct/foam dispenser.jpg',
+        description: 'All-natural, grain-free treats made with real chicken and veggies.',
+        features: [
+            'No artificial additives',
+            'Rich in protein and fiber',
+            'Ideal for training',
+            'Resealable pouch'
+        ]
+    },
 ];
 
 
