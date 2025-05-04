@@ -11,6 +11,7 @@ html, body {
   width: 100% !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
+  height: 100% !important;
 }
 
 
@@ -26,8 +27,8 @@ nav.navbar {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
-  width: 100%;
-  left: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100px;
 }
 
 .brand {
@@ -60,12 +61,94 @@ nav.navbar {
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover::after {
-  width: 100%; 
+.nav-links a:hover {
+  color: #007bff;
 }
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 3px; 
+  background-color: #007bff; 
+  transition: width 0.3s ease; 
+}
+
+.nav-links a:hover::after,
 .nav-links a:focus::after,
 .nav-links a:active::after {
-    width: 100%;
+    width: 100%; /* Full width underline on hover, focus, or active */
+}
+
+/* Remove underline for the Shop dropdown menu */
+#shopDropdown.nav-link.dropdown-toggle::after {
+  content: none;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and icon */
+  color: #555;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.dropdown a:hover {
+  color: #007bff;
+}
+
+.dropdown i {
+  font-size: 0.8rem; /* Adjust icon size */
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when hovering over the dropdown */
+.dropdown:hover i {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px 0;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
 }
 
 .sign-in-btn {
@@ -157,17 +240,16 @@ display: none;
 
 
 
+
+
 /*This is side menu categories*/
 .container {
-  width: 100% !important;
-  max-width: 100% !important;
+  
+  max-width: 2500px !important;
   display: flex !important;
   margin-top: 20px !important;
   margin-left: 20px !important;
   padding: 0 !important;
-  position: relative;
-  align-items: flex-start;
-  min-height: 100vh;
   overflow: visible;
 }
 
@@ -181,8 +263,8 @@ display: none;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 20px; /* Space from top of viewport */
-  align-self: flex-start; /* Important for flex layout */
-  max-height: calc(100vh - 40px); /* Viewport height minus some space */
+  align-self: flex-start;
+  max-height: calc(100vh - 80px); /* Viewport height minus some space */
   overflow-y: auto; /* Enable scrolling if content is long */
   z-index: 50;
 }
@@ -282,6 +364,42 @@ display: none;
 }
 
 
+.submenu {
+  display: none; /* Hide submenu by default */
+  padding-left: 15px; /* Indent submenu items */
+}
+
+.menu li:hover .submenu {
+  display: block; /* Show submenu on hover of parent item */
+}
+
+/* Additional styling for submenu items */
+.submenu li {
+  margin-bottom: 5px; /* Spacing between subitems */
+}
+
+.submenu a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.5s ease;
+}
+
+.submenu a:hover {
+  color: #007bff;
+}
+
+.menu, .submenu {
+  list-style-type: none !important;
+}
+
+.menu {
+  padding-left: 0 !important;
+}
+
+
+
+
 
 .filter-section {
   overflow: hidden;
@@ -322,130 +440,6 @@ display: none;
 
 
 
-
-
-
-
-
-/*This is main content 1st section*/
-.pet-selection-section {
-    margin-bottom: 40px;
-    text-align: left;
-  }
-
-.pet-selection-section h2 {
-  margin-bottom: 30px;
-  font-size: 28px;
-}
-  
-.pet-options {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.pet-option {
-  width: 150px;
-  cursor: pointer;
-}
-    
-.pet-image {
-  width: 120px;
-  height: 120px;
-  background: #f0f0f0;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  margin: 0 auto 15px;
-}
-
-.pet-option h3 {
-  font-size: 20px;
-  color: #333;
-}
-.catdog {
-  width: 100%px;
-  height: 250px;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.catdog-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  gap: 40px;
-}
-.catdog-container h3 {
-  text-align: center;
-  font-size: 20px;
-  color: #333;
-  margin-top: 10px;
-}
-
-.pet-rectangle {
-  width: 710px;
-  height: 100%;
-  border-radius: 10px;
-  background: #fbe992;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  transition: transform 0.3s ease;
-}
-.pet-rectangle-2{
-  width: 710px;
-  height: 100%;
-  border-radius: 10px;
-  background: #a9d9e2;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  transition: transform 0.3s ease;
-}
-.pet-rectangle:hover {
-  transform: scale(1.03); 
-}
-
-.pet-rectangle-2:hover {
-  transform: scale(1.03);
-}
-
-.pet-rectangle, .pet-rectangle-2 {
-  cursor: pointer;
-}
-      
-.pet-img1 {
-  width: 500px;
-  height: 320px;
-  position: absolute;
-  top: -77px; 
-  object-fit: contain;
-}
-
-.pet-img2 {
-  width: 350px;
-  height: 290px;
-  position: absolute;
-  top: -82px;
-  object-fit: contain;
-}
-
-
-
-
-
-
-
 /*swiper jquery*/
 .swiper-container {
   width: 100%;
@@ -453,6 +447,7 @@ display: none;
   padding: 20px 0;
   overflow: hidden;
   position: relative;
+  margin-bottom: 14px;
 }
 
 .swiper-wrapper {
@@ -461,6 +456,7 @@ display: none;
   margin-left: 14px;
   padding-bottom: 10px;
   transition-timing-function: ease-out;
+  margin-bottom: 20px;
 }
 
 .swiper-slide {
@@ -503,7 +499,7 @@ display: none;
 
 /* This is product cards*/
 .container .products-section, .container .products-section2 {
-    margin-top: 70px; 
+    margin-top: 0px; 
 }
 
 .products-section, 
@@ -528,7 +524,7 @@ display: none;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 240px;         /*Adjust this to match the title underline OKI*/
+    width: 140px;         /*Adjust this to match the title underline OKI*/
     height: 3px;
     background: #007BFF; 
 }
@@ -538,7 +534,7 @@ display: none;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 155px;         /*Adjust this to match the title underline OKI*/
+  width: 160px;         /*Adjust this to match the title underline OKI*/
   height: 3px;
   background: #007BFF; 
 }

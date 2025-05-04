@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paws & Claws</title>
-  <link rel="stylesheet" href="store.css">
-  <link rel="stylesheet" href="../../home/main.js">
+  <link rel="stylesheet" href="petfood.css">
+  <link rel="stylesheet" href="petfood.js">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   
@@ -14,7 +14,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
-<body>
+<body class="page-petfood">
 
   <!-- Navigation Bar Section -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -50,7 +50,7 @@
             <a class="dropdown-item" href="../shop/toys.html">Toys</a>
             <a class="dropdown-item" href="../shop/accessories.html">Accessories</a>
             <a class="dropdown-item" href="../shop/health.html">Health Products</a>
-            <a class="dropdown-item" href="../shop/shop.html">View all</a>
+            <a class="dropdown-item" href="../shop.html">View all</a>
           </div>
         </li>
         <li class="nav-item">
@@ -76,56 +76,39 @@
     <aside class="sidebar">
       <h2>Filters</h2>
       <div class="filter-section">
-          <div class="filter-header">
-              <h3>Categories</h3>
-          </div>
-          <ul class="menu">
-              <li><a href="../../shop/shop.html">All Products</a></li>
-              <li class="active"><a href="pet-food.html">Pet Food</a></li>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Toys</a></li>
-              <li><a href="">Health Products</a></li>
-              <li><a href="services.html">Services</a></li>
-          </ul>
+        <div class="filter-header">
+          <h3>Categories</h3>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="../shop.html" class="has-submenu">All Products</a>
+            <ul class="submenu">
+              <li><a href="">Cat</a></li>
+              <li><a href="">Dog</a></li>
+            </ul>
+          </li> 
+        
+          <li class="">
+            <a href="petfood.html" class="has-submenu">Pet Foods</a>
+            <ul class="submenu">
+              <li><a href="dryfoods.html">Dry Foods</a></li> 
+              <li><a href="wetfoods.html">Wet Foods</a></li> 
+              <li><a href="snacks.html">Snacks</a></li> 
+            </ul>
+          </li>
+          
+          <li><a href="../../shop/accessories.html">Accessories</a></li>
+          <li><a href="../../shop/health.html">Health Products</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
       </div>
     </aside>
+    
 
     <main class="main-content">
-      <h2>Shop for your Pet</h2>
-      <section class="catdog">
-        <div class="catdog-container">
-          <div>
-            <a href="cat food.html" class="pet-link">
-            <div class="pet-rectangle">
-              <img src="../../../assets/petfood/cat.png" class="pet-img1">
-            </div>
-            </a>
-            <h3>Cat</h3>
-            
-          </div>
-          <div>
-            <a href="dog food.html" class="pet-link">
-            <div class="pet-rectangle-2">
-              <img src="../../../assets/petfood/dog.png" class="pet-img2">
-            </div>
-            </a>
-            <h3>Dog</h3>
-          </div>
-          
-        </div>
-      </section>
-
-
-
-
-
-
-
-
-      
       <!-- swiper jquery -->
       <section class="products-section">
-        <h2>Top Rated Pet Food</h2>
+        <h2>Best Seller</h2>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -1075,49 +1058,14 @@
 
 
   
-  <script src="../../home/main.js"></script>
+  <script src="petfood.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        spaceBetween: 30,
-        loop: false,
-        speed: 500,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 15
-          },
-          640: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 20
-          },
-          1024: {
-            slidesPerView: 4,
-            slidesPerGroup: 4,
-            spaceBetween: 30
-          }
-        }
-      });
-    });
-  </script>
+  
 
 
 
