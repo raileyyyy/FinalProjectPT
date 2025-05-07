@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws & Claws</title>
+  <link rel="stylesheet" href="toys.css">
+  <link rel="stylesheet" href="toys.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="page-petfood">
+
+  <!-- Navigation Bar Section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- Brand & Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="../../../assets/logo.png" alt="Paws & Claws Logo" class="logo mr-2">
+      <span class="brand-name">Paws & Claws</span>
+    </a>
+  
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto nav-links">
+        <li class="nav-item">
+          <a class="nav-link" href="../../../frontend/home/main.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about/about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../services/services.html">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Shop <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="shopDropdown">
+            <a class="dropdown-item" href="../petfood/petfood.html">Pet Foods</a>
+            <a class="dropdown-item" href="../shop/toys.html">Toys</a>
+            <a class="dropdown-item" href="../shop/accessories.html">Accessories</a>
+            <a class="dropdown-item" href="../shop/health.html">Health Products</a>
+            <a class="dropdown-item" href="../shop.html">View all</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact/contact.html">Contact</a>
+        </li>
+      </ul>
+  
+      <!-- Right Side Icons -->
+      <div class="navbar-nav nav-icons">
+        <button class="btn btn-link nav-item nav-link icon-button cart-button" aria-label="Shopping Cart">
+          <i class="fas fa-shopping-cart icon"></i>
+          <span class="cart-count badge badge-pill badge-primary">0</span>
+        </button>
+        <a href="../login/login.html" class="nav-item nav-link icon-button">
+          <i class="fas fa-user icon"></i>
+          <span>Sign In</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Filters</h2>
+      <div class="filter-section">
+        <div class="filter-header">
+          <h3>Categories</h3>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="../shop.html" class="has-submenu">All Products</a>
+            <ul class="submenu">
+              <li><a href="../Cat/cat.html">Cat</a></li>
+              <li><a href="../Dog/dog.html">Dog</a></li>
+            </ul>
+          </li> 
+        
+          <li class="">
+            <a href="petfood.html" class="has-submenu">Pet Foods</a>
+            <ul class="submenu">
+              <li><a href="dryfoods.html">Dry Foods</a></li> 
+              <li><a href="wetfoods.html">Wet Foods</a></li> 
+              <li><a href="snacks.html">Snacks</a></li> 
+            </ul>
+          </li>
+          
+          <li><a href="../../shop/accessories.html">Accessories</a></li>
+          <li><a href="../../shop/health.html">Health Products</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </div>
+    </aside>
+    
+
+    <main class="main-content">
+      <!-- swiper jquery -->
+      <section class="products-section">
+        <div class="section-title">
+          <h2>Best Seller</h2>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat7.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <span class="count">(4.7k)</span>
+                  </div>
+                  <h3>Automatic Laser Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 1,499</span>
+                    <span class="original-price">P 2,299</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat4.jpg" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(14.4k)</span>
+                  </div>
+                  <h3>Cat Fishing Rod Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 130</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/dogtoy/dtoy1.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(12.5k)</span>
+                  </div>
+                  <h3>Pocket Powerball Bungee Tug</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 235 </span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/dogtoy/dtoy3.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(8.4k)</span>
+                  </div>
+                  <h3>Dog Tennis Ball</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 99 </span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat2.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(18.3k)</span>
+                  </div>
+                  <h3>Catnip Mouse Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 129</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+              <div class="swiper-slide">
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="../../../assets/dogtoy/dtoy2.webp" alt="">
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <span class="count">(11.7k)</span>
+                    </div>
+                    <h3>Spiky Ball Chew Toy</h3>
+                    <div class="product-price">
+                      <span class="current-price">P 79 </span>
+                    </div>
+                    <button class="add-to-cart">
+                      <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="products-section">
+        <div class="section-title">
+          <h2>Dog Toys</h2>
+          <a href="dryfoods.html" class="see-all-link">
+            See All
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/dogtoy/dtoy1.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(12.5k)</span>
+                  </div>
+                  <h3>Pocket Powerball Bungee Tug</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 235</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/dogtoy/dtoy2.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(11.7k)</span>
+                  </div>
+                  <h3>Spiky Ball Chew Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 79 </span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/dogtoy/dtoy3.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(8.4k)</span>
+                  </div>
+                  <h3>Dog Tennis Ball</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 99</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/dogtoy/dtoy4.jpg" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(7.3k)</span>
+                  </div>
+                  <h3>Dog Rope Knot Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 69 </span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/dogtoy/dtoy5.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(2.1k) </span>
+                  </div>
+                  <h3>Sleeping Dog Plush Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 399</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/dogtoy/dtoy6.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(957)</span>
+                  </div>
+                  <h3>Rope Ball Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 109</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+            
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
+      <section class="products-section">
+        <div class="section-title">
+          <h2>Cat Toys</h2>
+          <a href="wetfoods.html" class="see-all-link">
+            See All
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat1.jpg" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(3.9k)</span>
+                  </div>
+                  <h3>5in1 Cat Sisal Rope Scratching Post</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 2,199 </span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat2.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <span class="count">(7.0k)</span>
+                  </div>
+                  <h3>Catnip Mice Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 129</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat3.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(14.2k) </span>
+                  </div>
+                  <h3>Cat Ball with Bell</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 129</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat4.jpg" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(14.4k) </span>
+                  </div>
+                  <h3>Cat Fishing Rod Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 130 </span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat5.jpg" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(916)</span>
+                  </div>
+                  <h3>SmartCat Peek and Play Toy Box</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 2,499</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/cattoy/cat7.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(1k)</span>
+                  </div>
+                  <h3>Automatic Laser Toy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 1,499</span>
+                    <span class="original-price">P 2,299</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="products-section2">
+        <h2>All Pet Toys</h2>
+        <div class="products-grid">
+        
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/cattoy/cat1.jpg" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(3.9k) </span>
+              </div>
+              <h3>5in1 Cat Sisal Rope Scratching Post</h3>
+              <div class="product-price">
+                <span class="current-price">P 2,199 </span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        
+          <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/cattoy/cat2.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(18.3k) </span>
+            </div>
+            <h3>Catnip Mouse Toy</h3>
+            <div class="product-price">
+              <span class="current-price">P 129</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>        
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/cattoy/cat3.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(14.2k) </span>
+            </div>
+            <h3>Cat Ball with Bell</h3>
+            <div class="product-price">
+              <span class="current-price">P 129 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/cattoy/cat4.jpg" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(14.4k) </span>
+            </div>
+            <h3>Cat Fishing Rod Toy</h3>
+            <div class="product-price">
+              <span class="current-price">P 130 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/cattoy/cat5.jpg" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(916)</span>
+            </div>
+            <h3>SmartCat Peek and Play Toy Box</h3>
+            <div class="product-price">
+              <span class="current-price">P 2,499 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/cattoy/cat7.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(4.7k)</span>
+            </div>
+            <h3>Automatic Laser Toy </h3>
+            <div class="product-price">
+              <span class="current-price">P 1,499 </span>
+              <span class="original-price">P 2,299</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/dogtoy/dtoy1.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(12.5k) </span>
+            </div>
+            <h3>Pocket Powerball Bungee Tug</h3>
+            <div class="product-price">
+              <span class="current-price">P 235 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/dogtoy/dtoy2.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(11.7k) </span>
+            </div>
+            <h3>Spiky Ball Chew Toy</h3>
+            <div class="product-price">
+              <span class="current-price">P 79 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/dogtoy/dtoy3.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(8.4k) </span>
+            </div>
+            <h3>Dog Tennis Ball</h3>
+            <div class="product-price">
+              <span class="current-price">P 99 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/dogtoy/dtoy4.jpg" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(7.3k) </span>
+            </div>
+            <h3>Dog Rope Knot Toy</h3>
+            <div class="product-price">
+              <span class="current-price">P 69 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+ 
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/dogtoy/dtoy5.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+              <span class="count">(2.1k) </span>
+            </div>
+            <h3>Sleeping Dog Plush Toy</h3>
+            <div class="product-price">
+              <span class="current-price">P 399 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/dogtoy/dtoy6.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+              <span class="count">(957) </span>
+            </div>
+            <h3>Rope Ball Toy</h3>
+            <div class="product-price">
+              <span class="current-price">P 109 </span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+  
+        </div>
+      </section>
+      
+    </main>
+  </div>
+
+
+
+  
+  <script src="toys.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+
+
+
+</body>
+</html>
