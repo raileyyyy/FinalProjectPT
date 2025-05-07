@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws & Claws</title>
+  <link rel="stylesheet" href="../petfood/petfood.css">
+  <link rel="stylesheet" href="../petfood/petfood.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="page-petfood">
+
+  <!-- Navigation Bar Section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- Brand & Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="../../../assets/logo.png" alt="Paws & Claws Logo" class="logo mr-2">
+      <span class="brand-name">Paws & Claws</span>
+    </a>
+  
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto nav-links">
+        <li class="nav-item">
+          <a class="nav-link" href="../../../frontend/home/main.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../about/about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../services/services.html">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Shop <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="shopDropdown">
+            <a class="dropdown-item" href="../petfood/petfood.html">Pet Foods</a>
+            <a class="dropdown-item" href="../shop/toys.html">Toys</a>
+            <a class="dropdown-item" href="../shop/accessories.html">Accessories</a>
+            <a class="dropdown-item" href="../HealthProducts/HealthProducts.html">Health Products</a>
+            <a class="dropdown-item" href="../shop.html">View all</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../contact/contact.html">Contact</a>
+        </li>
+      </ul>
+  
+      <!-- Right Side Icons -->
+      <div class="navbar-nav nav-icons">
+        <button class="btn btn-link nav-item nav-link icon-button cart-button" aria-label="Shopping Cart">
+          <i class="fas fa-shopping-cart icon"></i>
+          <span class="cart-count badge badge-pill badge-primary">0</span>
+        </button>
+        <a href="../login/login.html" class="nav-item nav-link icon-button">
+          <i class="fas fa-user icon"></i>
+          <span>Sign In</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Filters</h2>
+      <div class="filter-section">
+        <div class="filter-header">
+          <h3>Categories</h3>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="../shop.html" class="has-submenu">All Products</a>
+            <ul class="submenu">
+              <li><a href="cat.html">Cat</a></li>
+              <li><a href="../Dog/dog.html">Dog</a></li>
+            </ul>
+          </li> 
+        
+          <li class="">
+            <a href="../petfood/petfood.html" class="has-submenu">Pet Foods</a>
+            <ul class="submenu">
+              <li><a href="../petfood/dryfoods.html">Dry Foods</a></li> 
+              <li><a href="../petfood/wetfoods.html">Wet Foods</a></li> 
+              <li><a href="../petfood/snacks.html">Snacks</a></li> 
+            </ul>
+          </li>
+          
+          <li><a href="../../shop/accessories.html">Accessories</a></li>
+          <li><a href="../../shop/health.html">Health Products</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </div>
+    </aside>
+    
+
+    <main class="main-content">    
+        <section class="catdog">
+          <div class="catdog-container1">
+              <div>
+                  <a href="cat.html" class="pet-link">
+                  <div class="pet-rectangle">
+                    <div class="pet-text">
+                      <h2>Everything For</h2>
+                      <h1>Cats</h1>
+                    </div>
+                    <img src="../../../assets/petfood/cat/top.png" class="pet-img1">
+                  </div>
+                  </a>
+                  
+              </div>
+          </div>
+
+            
+          <div class="catdog-container">
+            <div>
+              <a href="catfood.html" class="pet-link">
+              <div class="pet-rectangle-2">
+                <div class="pet-text">
+                  <h4>Cat Snacks</h4>
+                </div>
+                <img src="../../../assets/petfood/cat/left.png" class="pet-img2">
+              </div>
+              </a>
+              
+            </div>
+            <div>
+              <a href="cataccessories" class="pet-link">
+              <div class="pet-rectangle-3">
+                <div class="pet-text">
+                  <h4>Cat Accessories</h4>
+                </div>
+                <img src="../../../assets/petfood/cat/bottom.png" class="pet-img2">
+              </div>
+              </a>
+              
+            </div>
+            <div>
+              <a href="../HealthProducts/HealthProducts.html" class="pet-link">
+              <div class="pet-rectangle-4">
+                <div class="pet-text">
+                  <h4>Health Products</h4>
+                </div>
+                <img src="../../../assets/petfood/cat/right.png" class="pet-img2">
+              </div>
+              </a>
+              
+            </div>
+          </div>
+        </section>
+
+
+        <section class="products-section3">
+          <h2>All Cat Products</h2>
+          <div class="products-grid">
+  
+  
+            
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../../../assets/petfood/cat/wet/whiskaswet.png" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span class="count">(10.9k)</span>
+                </div>
+                <h3>Whiskas Wet Cat Food</h3>
+                <div class="product-price">
+                  <span class="current-price">P 99</span>
+                </div>
+                <button class="add-to-cart">
+                  <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+  
+  
+          
+            <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/specialcat-chikenturkey.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(14.3k)</span>
+              </div>
+              <h3>Special Cat All Life Stages Chicken and Turkey Dry Cat Food 7kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 1,545.00</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/orijencatfood.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(957)</span>
+              </div>
+              <h3>Orijen Dry Cat Food</h3>
+              <div class="product-price">
+                <span class="current-price">P 789</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/cutiecatstunadryfood.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(11.7)</span>
+              </div>
+              <h3>Cutie Cats Tuna Dry Cat Food</h3>
+              <div class="product-price">
+                <span class="current-price">P 963</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Power Cat Fresh Ocean Tuna Dry Cat Food 1.4kg 389.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(3.3k)</span>
+              </div>
+              <h3>Power Cat Fresh Ocean Tuna Dry Cat Food 1.4kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 389</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Taste of The Wild Lowland Creek Dry Cat Food 6.6kg 3,279.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(428)</span>
+              </div>
+              <h3>Taste of The Wild Lowland Creek Dry Cat Food 6.6kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 389</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+          
+          
+  
+  
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Cindy's Recipe Naturelle Holistic Babycat and Mother Chicken Dry Cat Food 1.5kg 689.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                <span class="count">(1.0k)</span>
+              </div>
+              <h3>Cindy's Recipe Naturelle Holistic Babycat and Mother Chicken Dry Cat Food 1.5kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 689</span>
+                <span class="original-price">P 999.00</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+    
+      
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/wet/Cindy's Recipe Favourite Pacific Tuna with Sardine Wet Cat Food 400g (2 cans) 230.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(11.7)</span>
+              </div>
+              <h3>Cindy's Recipe Favourite Pacific Tuna with Sardine Wet Cat Food 400g (2 cans)</h3>
+              <div class="product-price">
+                <span class="current-price">P 230</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/wet/Kit Cat Deboned Chicken and Prawn Wet Cat Food 80g (6 cans) 354.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(872)</span>
+              </div>
+              <h3>Kit Cat Deboned Chicken and Prawn Wet Cat Food 80g (6 cans)</h3>
+              <div class="product-price">
+                <span class="current-price">P 354</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/wet/Whiskas Junior Chicken Wet Cat Food 80g (14 pouches) 546.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(1k)</span>
+              </div>
+              <h3>Whiskas Junior Chicken Wet Cat Food 80g (14 pouches)</h3>
+              <div class="product-price">
+                <span class="current-price">P 546</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Acana Adult Indoor Entrée Dry Cat Food 1.8kg 1,225.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(1.3k)</span>
+              </div>
+              <h3>Acana Adult Indoor Entrée Dry Cat Food 1.8kg </h3>
+              <div class="product-price">
+                <span class="current-price">P 1,225</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+          
+  
+  
+  
+          
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Temptations Salmon Cat Treats 75g 115.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(1.2k)</span>
+              </div>
+              <h3>Temptations Salmon Cat Treats 75g</h3>
+              <div class="product-price">
+                <span class="current-price">P 115</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+          
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Temptations Chicken Cat Treats 75g 115.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(1.2k)</span>
+              </div>
+              <h3>Temptations Chicken Cat Treats 75g</h3>
+              <div class="product-price">
+                <span class="current-price">P 115</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Kit Cat Kitty Crunch Salmon Cat Treats 60g 89.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(896)</span>
+              </div>
+              <h3>Kit Cat Kitty Crunch Salmon Cat Treats 60g</h3>
+              <div class="product-price">
+                <span class="current-price">P 89</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Whiskas Adult Chicken and Tuna Hairball Control Dry Cat Food 1.1kg 335.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(5.7k)</span>
+              </div>
+              <h3>Whiskas Adult Chicken and Tuna Hairball Control Dry Cat Food 1.1kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 335</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Kit Cat Breath Bites Salmon Cat Treats 60g 99.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(832)</span>
+              </div>
+              <h3>Kit Cat Breath Bites Salmon Cat Treats 60g</h3>
+              <div class="product-price">
+                <span class="current-price">P 99</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+          
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Ciao Churutto Stick Maguro Cat Treats 7gx4 (CS-121) 99.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(4.2k)</span>
+              </div>
+              <h3>Ciao Churutto Stick Maguro Cat Treats 7gx4</h3>
+              <div class="product-price">
+                <span class="current-price">P 99</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Ciao Churu Tuna Festive Jar Cat Treats 14gx50 (TSC-11T) 999.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(97)</span>
+              </div>
+              <h3>Ciao Churu Tuna Festive Jar Cat Treats 14gx50</h3>
+              <div class="product-price">
+                <span class="current-price">P 999</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Whiskas Adult Tuna Dry Cat Food 7kg 1,235.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(2.1)</span>
+              </div>
+              <h3>Whiskas Adult Tuna Dry Cat Food 7kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 1,235</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Royal Canin Feline Care Nutrition Adult Urinary Care Dry Cat Food 2kg 1,267.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(1.3k)</span>
+              </div>
+              <h3>Royal Canin Feline Care Nutrition Adult Urinary Care Dry Cat Food 2kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 1,267</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Lara Junior Chicken Dry Cat Food 2kg 750.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">869()</span>
+              </div>
+              <h3>Lara Junior Chicken Dry Cat Food 2kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 750</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+          
+          
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Brit Care Hairball Cat Treats 50g 119.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(129)</span>
+              </div>
+              <h3>Brit Care Hairball Cat Treats 50g</h3>
+              <div class="product-price">
+                <span class="current-price">P 119</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+          
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/Kit Cat Signature Salmon Dry Cat Food 1.2kg 599.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(765)</span>
+              </div>
+              <h3>Kit Cat Signature Salmon Dry Cat Food 1.2kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 599</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/SmartHeart Adult Tuna and Shrimp Dry Cat Food 7kg 1,110.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(43)</span>
+              </div>
+              <h3>SmartHeart Adult Tuna and Shrimp Dry Cat Food 7kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 1,110</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+          
+  
+  
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Ciao Churu Grilled Tuna Scallop Cat Treats 12gx4 (4R-105) (2 packs) 198.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(352)</span>
+              </div>
+              <h3>Ciao Churu Grilled Tuna Scallop Cat Treats 12gx4 (4R-105) (2 packs)</h3>
+              <div class="product-price">
+                <span class="current-price">P 198</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/wet/Sheba Succulent Chicken Breast Wet Cat Food 85g (6 cans) 420.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(916)</span>
+              </div>
+              <h3>Sheba Succulent Chicken Breast Wet Cat Food 85g (6 cans)</h3>
+              <div class="product-price">
+                <span class="current-price">P 420</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Inaba Churu Seafood Varieties Sticks Cat Treats 14gx20 (USA-623A)386.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(876)</span>
+              </div>
+              <h3>Inaba Churu Seafood Varieties Sticks Cat Treats 14gx20</h3>
+              <div class="product-price">
+                <span class="current-price">P 386</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/wet/Royal Canin Feline Breed Nutrition Adult British Shorthair Wet Cat Food 85g (12 pouches) 969.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(236)</span>
+              </div>
+              <h3>Royal Canin Feline Breed Nutrition Adult British Shorthair Wet Cat Food 85g (12 pouches)</h3>
+              <div class="product-price">
+                <span class="current-price">P 969</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Inaba Churu Chicken Varieties Sticks Cat Treats 14gx20 (USA-622A) 413.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(88)</span>
+              </div>
+              <h3>Inaba Churu Chicken Varieties Sticks Cat Treats 14gx20</h3>
+              <div class="product-price">
+                <span class="current-price">P 413</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+      
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/wet/Kit Cat Freeze Dried Yogurt Original Cat Treats 10g 149.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(1.2k)</span>
+              </div>
+              <h3>Kit Cat Freeze Dried Yogurt Original Cat Treats 10g</h3>
+              <div class="product-price">
+                <span class="current-price">P 149</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+          
+  
+  
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/SmartHeart Creamy Chicken Cat Treats 60g 110.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(431)</span>
+              </div>
+              <h3>SmartHeart Creamy Chicken Cat Treats 60g</h3>
+              <div class="product-price">
+                <span class="current-price">P 110</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/snacks/Brit Care Dental Cat Treats 50g 119.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(89)</span>
+              </div>
+              <h3>Brit Care Dental Cat Treats 50g</h3>
+              <div class="product-price">
+                <span class="current-price">P 119</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../../../assets/petfood/cat/dry/IAMS Mother and Kitten Dry Cat Food 1kg 500.png" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="count">(2.2k)</span>
+              </div>
+              <h3>IAMS Mother and Kitten Dry Cat Food 1kg</h3>
+              <div class="product-price">
+                <span class="current-price">P 500</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+  
+  
+        
+          </div>
+        </section>
+      
+      
+    </main>
+  </div>
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="petfood.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+
+
+
+</body>
+</html>

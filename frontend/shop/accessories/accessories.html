@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws & Claws</title>
+  <link rel="stylesheet" href="accessories.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="page-petfood">
+
+  <!-- Navigation Bar Section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- Brand & Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="../../../assets/logo.png" alt="Paws & Claws Logo" class="logo mr-2">
+      <span class="brand-name">Paws & Claws</span>
+    </a>
+  
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto nav-links">
+        <li class="nav-item">
+          <a class="nav-link" href="../../../frontend/home/main.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about/about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../services/services.html">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Shop <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="shopDropdown">
+            <a class="dropdown-item" href="../petfood/petfood.html">Pet Foods</a>
+            <a class="dropdown-item" href="../shop/toys.html">Toys</a>
+            <a class="dropdown-item" href="../shop/accessories/accessories.html">Accessories</a>
+            <a class="dropdown-item" href="../shop/HealthProducts/health.html">Health Products</a>
+            <a class="dropdown-item" href="../shop.html">View all</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact/contact.html">Contact</a>
+        </li>
+      </ul>
+  
+      <!-- Right Side Icons -->
+      <div class="navbar-nav nav-icons">
+        <button class="btn btn-link nav-item nav-link icon-button cart-button" aria-label="Shopping Cart">
+          <i class="fas fa-shopping-cart icon"></i>
+          <span class="cart-count badge badge-pill badge-primary">0</span>
+        </button>
+        <a href="../login/login.html" class="nav-item nav-link icon-button">
+          <i class="fas fa-user icon"></i>
+          <span>Sign In</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Filters</h2>
+      <div class="filter-section">
+        <div class="filter-header">
+          <h3>Categories</h3>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="../shop.html" class="has-submenu">All Products</a>
+            <ul class="submenu">
+              <li><a href="../Cat/cat.html">Cat</a></li>
+              <li><a href="../Dog/dog.html">Dog</a></li>
+            </ul>
+          </li> 
+        
+          <li class="">
+            <a href="petfood.html" class="has-submenu">Pet Foods</a>
+            <ul class="submenu">
+              <li><a href="dryfoods.html">Dry Foods</a></li> 
+              <li><a href="wetfoods.html">Wet Foods</a></li> 
+              <li><a href="snacks.html">Snacks</a></li> 
+            </ul>
+          </li>
+          
+          <li><a href="../../shop/accessories.html">Accessories</a></li>
+          <li><a href="../../shop/health.html">Health Products</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </div>
+    </aside>
+    
+
+    <main class="main-content">
+      <!-- swiper jquery -->
+      <section class="products-section">
+        <div class="section-title">
+          <h2>Best Sellers</h2>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-condo.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <span class="count">(964)</span>
+                  </div>
+                  <h3>Cat Condo SJ11 1312 Gray</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 6,249.00</span>
+                    <span class="original-price">P 5,749.50</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/travel-canister.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(785)</span>
+                  </div>
+                  <h3>Doggo 2-in-1 Travel Canister</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 249.00</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/3-level-dog-bowl.png">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(837)</span>
+                  </div>
+                  <h3>3-Level Dog Bowl</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 1498.99</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/2-1-ribbon-cat-harness.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(715)</span>
+                  </div>
+                  <h3>2-in-1 Ribbon Cat Harness and Leash</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 248.99</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide">
+              
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/shark-pet-bed.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(597)</span>
+                  </div>
+                  <h3>Round Animal Shark Pet Bed</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 699.00</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+              <div class="swiper-slide">
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="../../../assets/accessories/feu-dog-apparel.png" alt="">
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <span class="count">(1.775)</span>
+                    </div>
+                    <h3>Pawsh Couture FEU Dog Apparel</h3>
+                    <div class="product-price">
+                      <span class="current-price">P 199.98</span>
+                    </div>
+                    <button class="add-to-cart">
+                      <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="swiper-slide">
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="../../../assets/accessories/camouflage-dog-shorts.png" alt="">
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <span class="count">(657)</span>
+                    </div>
+                    <h3>Pawsh Couture Camouflage Dog Short</h3>
+                    <div class="product-price">
+                      <span class="current-price">P 149.98</span>
+                    </div>
+                    <button class="add-to-cart">
+                      <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="../../../assets/accessories/dog-poop-bag-dispenser.jpg" alt="">
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <span class="count">(1.2k)</span>
+                    </div>
+                    <h3>Earth Rated Poop Bag Dispenser</h3>
+                    <div class="product-price">
+                      <span class="current-price">P 359.10</span>
+                    </div>
+                    <button class="add-to-cart">
+                      <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide">
+                
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="../../../assets/accessories/adventure-harness.png" alt="">
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <span class="count">(1k)</span>
+                    </div>
+                    <h3>Adventure Dog Harness</h3>
+                    <div class="product-price">
+                      <span class="current-price">P 350</span>
+                    </div>
+                    <button class="add-to-cart">
+                      <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <!-- Dog Accessories Section -->
+      <section class="products-section">
+        <div class="section-title">
+          <h2>Dog Accessories</h2>
+          </a>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/crag-reflective-collar.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(342)</span>
+                  </div>
+                  <h3>Crag Reflective Dog Collar</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 1,495</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/rope-dog-slipper.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(736)</span>
+                  </div>
+                  <h3>Chewable Rope Dog ToyS Slipper</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 195</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/zee-dog-neopro-collar.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(837)</span>
+                  </div>
+                  <h3>Zee.Dog NeoPro Collar</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 899.45</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/uno-dog-bowl.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(983)</span>
+                  </div>
+                  <h3>Uno Dog Bowl By Ezydog</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 990</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/dog-bowl-fish-green.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(739)</span>
+                  </div>
+                  <h3>Dog Bowl Fish Shape Green</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 499</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/dog-bowl-squirrel-pink.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(957)</span>
+                  </div>
+                  <h3>Dog Bowl Squirrel Shape Pink</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 499</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/checkered-dog-bed.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(1.3k)</span>
+                  </div>
+                  <h3>Large Checked Bed for Dogs</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 899</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/dog-stroller.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(962)</span>
+                  </div>
+                  <h3>Dog Stroller</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 3,499</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+                        <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/dog-bag-carrier.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(3.3k)</span>
+                  </div>
+                  <h3>Bag Carrier for Dogs</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 399</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/retractable-dog-leash.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(428)</span>
+                  </div>
+                  <h3>Retractable Dog Leash Trail Red</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 430</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/pet-bandana.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(345)</span>
+                  </div>
+                  <h3>Bandana for Dogs</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 39</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/soft-bed-dogs.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <span class="count">(1.0k)</span>
+                  </div>
+                  <h3>Soft Bed Dream Slumber Bed Dog</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 689</span>
+                    <span class="original-price">P 999.00</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>      
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- Cat Accessories Section -->
+      <section class="products-section">
+        <div class="section-title">
+          <h2>Cat Accessories</h2>
+          </a>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-litter-deorizer-powder.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(1.2k)</span>
+                  </div>
+                  <h3>Arm & Hammer Cat Litter Deorizer Powder 200oz</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 279</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-litter-clumping.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <span class="count">(986)</span>
+                  </div>
+                  <h3>Arm & Hammer Double Duty Clumping Cat Litter 14lbs</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 751.99</span>
+                    <span class="original-price">P 929.00</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-natural-spray.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(1.1k)</span>
+                  </div>
+                  <h3>Muddy Paws Catnip Natural Spray 30ml</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 369</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-toy-catnip.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(1k)</span>
+                  </div>
+                  <h3>SMARTYKAT Skitter Slices Plush Cat Toy with Catnip, 5 count</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 150</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/pet-water-dispenser.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(916)</span>
+                  </div>
+                  <h3>Petmate Pearl Replendish Waterer with Microban, Pearl Silver Gray, 0.5-gal</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 420</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/ceramic-cat-bowl.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(308)</span>
+                  </div>
+                  <h3>Frisco Cat Face Non-skid Ceramic Cat Bowl, Blue, 1 cup</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 235</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-litter-scoop.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(1k)</span>
+                  </div>
+                  <h3>Vibrant Life Cat Litter Scoop</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 52.00</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-tunnel.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(428)</span>
+                  </div>
+                  <h3>Vibrant Life Portable Jungle Party Cove & Cat Tunnel Multicolored</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 1,134</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-ball.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(236)</span>
+                  </div>
+                  <h3>Vibrant Life Interactive Cat Toy Yarn Balls with Bell and Rattling Sound, Multi-Colored Balls</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 156</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-scratcher-accessory.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(968)</span>
+                  </div>
+                  <h3>Catstages Scratch 'n Rest Cat Scratcher Cat Accessory</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 969</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/cat-collar-gemstone-pink.webp" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(1.2k)</span>
+                  </div>
+                  <h3> Rhinestone Gem Cat Collar, Pink</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 68.00</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="../../../assets/accessories/3-in-1-cat-litter-scoop.png" alt="">
+                </div>
+                <div class="product-info">
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="count">(876)</span>
+                  </div>
+                  <h3>3-in-1 Litter Scoop with Sweep & Caddy</h3>
+                  <div class="product-price">
+                    <span class="current-price">P 475</span>
+                  </div>
+                  <button class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      
+      
+
+
+
+      
+
+      <section class="products-section2">
+        <h2>All Accessories</h2>
+        <div class="products-grid">
+
+
+          
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../../../assets/accessories/soft-bed-dogs.png" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                  <span class="count">(1.0k)</span>
+                </div>
+                <h3>Soft Bed Dream Slumber Bed Dog</h3>
+                <div class="product-price">
+                  <span class="current-price">P 689</span>
+                  <span class="original-price">P 999.00</span>
+                </div>
+                <button class="add-to-cart">
+                  <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>      
+              </div>
+            </div>
+
+
+        
+          <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/cat-ball.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(236)</span>
+            </div>
+            <h3>Vibrant Life Interactive Cat Toy Yarn Balls with Bell and Rattling Sound, Multi-Colored Balls</h3>
+            <div class="product-price">
+              <span class="current-price">P 156</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+        
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/cat-collar-gemstone-pink.webp" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(1.2k)</span>
+            </div>
+            <h3>Rhinestone Gem Cat Collar, Pink</h3>
+            <div class="product-price">
+              <span class="current-price">P 68.00</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/uno-dog-bowl.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(983)</span>
+            </div>
+            <h3>Uno Dog Bowl By Ezydog</h3>
+            <div class="product-price">
+              <span class="current-price">P 990</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/3-in-1-cat-litter-scoop.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(876)</span>
+            </div>
+            <h3>3-in-1 Litter Scoop with Sweep & Caddy</h3>
+            <div class="product-price">
+              <span class="current-price">P 963</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/3-level-dog-bowl.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(837)</span>
+            </div>
+            <h3>3-Level Dog Bowl</h3>
+            <div class="product-price">
+              <span class="current-price">P 1498.99</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/crag-reflective-collar.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(342)</span>
+            </div>
+            <h3>Crag Reflective Dog Collar</h3>
+            <div class="product-price">
+              <span class="current-price">P 1,495</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/cat-natural-spray.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(1.1k)</span>
+            </div>
+            <h3>Muddy Paws Catnip Natural Spray 30ml</h3>
+            <div class="product-price">
+              <span class="current-price">P 369</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+        
+        
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/retractable-dog-leash.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(428)</span>
+            </div>
+            <h3>Retractable Dog Leash Trail Red</h3>
+            <div class="product-price">
+              <span class="current-price">P 430</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+        
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/cat-litter-deorizer-powder.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(1.2k)</span>
+            </div>
+            <h3>Arm & Hammer Cat Litter Deorizer Powder 200oz</h3>
+            <div class="product-price">
+              <span class="current-price">P 279</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/zee-dog-neopro-collar.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(837)</span>
+            </div>
+            <h3>Zee.Dog NeoPro Collar</h3>
+            <div class="product-price">
+              <span class="current-price">P 899.45</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/camouflage-dog-shorts.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(657)</span>
+            </div>
+            <h3>Pawsh Couture Camouflage Dog Short</h3>
+            <div class="product-price">
+              <span class="current-price">P 149.98</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/dog-bowl-fish-green.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(739)</span>
+            </div>
+            <h3>Dog Bowl Fish Shape Green</h3>
+            <div class="product-price">
+              <span class="current-price">P 499</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+  
+        
+
+
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/cat-condo.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(964)</span>
+            </div>
+            <h3>Cat Condo</h3>
+            <div class="product-price">
+              <span class="current-price">P 6,249.00</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/shark-pet-bed.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(597)</span>
+            </div>
+            <h3>Round Animal Shark Pet Bed</h3>
+            <div class="product-price">
+              <span class="current-price">P 699.00</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/dog-poop-bag-dispenser.jpg" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(1.2k)</span>
+            </div>
+            <h3>Earth Rated Poop Bag Dispenser</h3>
+            <div class="product-price">
+              <span class="current-price">P 359.10</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/adventure-harness.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(1k)</span>
+            </div>
+            <h3>Adventure Dog Harness</h3>
+            <div class="product-price">
+              <span class="current-price">P 350</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/rope-dog-slipper.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(736)</span>
+            </div>
+            <h3>Chewable Rope Dog Toy Slipper</h3>
+            <div class="product-price">
+              <span class="current-price">P 1,225</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        
+
+
+
+        
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/dog-bowl-squirrel-pink.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(957)</span>
+            </div>
+            <h3>Dog Bowl Squirrel Shape Pink</h3>
+            <div class="product-price">
+              <span class="current-price">P 499</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/checkered-dog-bed.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(1.3k)</span>
+            </div>
+            <h3>Large Checked Bed for Dogs</h3>
+            <div class="product-price">
+              <span class="current-price">P 899</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/ceramic-cat-bowl.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(308)</span>
+            </div>
+            <h3>Frisco Cat Face Non-skid Ceramic Cat Bowl, Blue, 1 cup</h3>
+            <div class="product-price">
+              <span class="current-price">P 235</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+        
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/cat-tunnel.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(428)</span>
+            </div>
+            <h3>Vibrant Life Portable Jungle Party Cove & Cat Tunnel Multicolored</h3>
+            <div class="product-price">
+              <span class="current-price">P 1,134</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/cat-scratcher-accessory.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(968)</span>
+            </div>
+            <h3>Catstages Scratch 'n Rest Cat Scratcher Cat Accessory</h3>
+            <div class="product-price">
+              <span class="current-price">P 969</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/dog-stroller.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(962)</span>
+            </div>
+            <h3>Dog Stroller</h3>
+            <div class="product-price">
+              <span class="current-price">P 3,499</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+        
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/dog-bag-carrier.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(3.3k)</span>
+            </div>
+            <h3>Bag Carrier for Dogs</h3>
+            <div class="product-price">
+              <span class="current-price">P 399</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+        
+
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../../../assets/accessories/cat-ball.png" alt="">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="count">(236)</span>
+            </div>
+            <h3>Vibrant Life Interactive Cat Toy Yarn Balls with Bell and Rattling Sound, Multi-Colored Balls</h3>
+            <div class="product-price">
+              <span class="current-price">P 156</span>
+            </div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+
+
+      
+        </div>
+      </section>
+      
+    </main>
+  </div>
+
+
+
+  
+  <script src="accessories.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+
+
+
+</body>
+</html>
